@@ -40,7 +40,8 @@ export default defineNuxtConfig({
       siteName: appConfig.site.name,
       siteUrl: appConfig.site.url,
       contactEmail: appConfig.contact.email,
-      socialMedia: appConfig.socialMedia
+      socialMedia: appConfig.socialMedia,
+      appConfig: appConfig
     }
   },
 
@@ -75,6 +76,18 @@ export default defineNuxtConfig({
 
   // Development tools
   devtools: { enabled: true },
+
+  // Vite configuration for ngrok support
+  vite: {
+    server: {
+      allowedHosts: [
+        'localhost',
+        '127.0.0.1',
+        '.ngrok-free.app',
+        '.ngrok.io'
+      ]
+    }
+  },
 
   // Compatibility
   compatibilityDate: '2025-05-15'

@@ -1,4 +1,4 @@
-# FedHub - Profesyonel Federasyon Web Platformu
+# FedHub
 
 FedHub, federasyonlar ve kurumsal organizasyonlar için özel olarak geliştirilmiş modern ve profesyonel bir web platformudur.
 

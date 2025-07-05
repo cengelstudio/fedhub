@@ -4,12 +4,13 @@
     <section class="hero-section bg-gradient-hero text-white section-padding">
       <div class="container text-center">
         <div class="max-w-4xl mx-auto animate-fade-in-up">
-          <h1 class="text-5xl lg:text-6xl font-bold mb-6 text-shadow">İletişim</h1>
-          <p class="text-xl lg:text-2xl text-blue-100 leading-relaxed">
+          <h1 class="text-6xl lg:text-7xl font-bold mb-8">İletişim</h1>
+          <p class="text-xl lg:text-2xl text-gray-200 leading-relaxed">
             Bizimle iletişime geçmek için aşağıdaki bilgileri kullanabilirsiniz
           </p>
         </div>
       </div>
+      <div class="absolute inset-0 bg-pattern opacity-10"></div>
     </section>
 
     <!-- Contact Info & Form -->
@@ -23,9 +24,9 @@
             </h2>
 
             <div class="space-y-8">
-              <div class="flex items-start group">
-                <div class="contact-icon bg-gradient-to-br from-blue-100 to-blue-200 group-hover:scale-110 transition-transform duration-300">
-                  <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div class="flex items-start">
+                <div class="w-12 h-12 bg-gray-50 flex items-center justify-center" style="border-radius: 4px;">
+                  <svg class="w-6 h-6 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
                   </svg>
                 </div>
@@ -36,9 +37,9 @@
                 </div>
               </div>
 
-              <div class="flex items-start group">
-                <div class="contact-icon bg-gradient-to-br from-green-100 to-green-200 group-hover:scale-110 transition-transform duration-300">
-                  <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div class="flex items-start">
+                <div class="w-12 h-12 bg-gray-50 flex items-center justify-center" style="border-radius: 4px;">
+                  <svg class="w-6 h-6 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
                   </svg>
                 </div>
@@ -49,9 +50,9 @@
                 </div>
               </div>
 
-              <div class="flex items-start group">
-                <div class="contact-icon bg-gradient-to-br from-purple-100 to-purple-200 group-hover:scale-110 transition-transform duration-300">
-                  <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div class="flex items-start">
+                <div class="w-12 h-12 bg-gray-50 flex items-center justify-center" style="border-radius: 4px;">
+                  <svg class="w-6 h-6 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
                   </svg>
@@ -63,9 +64,9 @@
                 </div>
               </div>
 
-              <div class="flex items-start group">
-                <div class="contact-icon bg-gradient-to-br from-orange-100 to-orange-200 group-hover:scale-110 transition-transform duration-300">
-                  <svg class="w-8 h-8 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div class="flex items-start">
+                <div class="w-12 h-12 bg-gray-50 flex items-center justify-center" style="border-radius: 4px;">
+                  <svg class="w-6 h-6 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
                   </svg>
                 </div>
@@ -87,10 +88,11 @@
                   :href="url"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="w-14 h-14 bg-gradient-to-br from-gray-100 to-gray-200 rounded-xl flex items-center justify-center hover:from-blue-100 hover:to-blue-200 transition-all duration-300 group"
+                  class="w-12 h-12 bg-gray-50 flex items-center justify-center hover:bg-gray-100 transition-all duration-200"
+                  style="border-radius: 4px;"
                   v-if="url"
                 >
-                  <span class="text-2xl group-hover:scale-110 transition-transform duration-300">{{ getSocialIcon(platform) }}</span>
+                  <span class="text-2xl">{{ getSocialIcon(platform) }}</span>
                 </a>
               </div>
             </div>
@@ -98,15 +100,15 @@
 
           <!-- Contact Form -->
           <div class="animate-fade-in-right">
-            <div class="card bg-gradient-to-br from-white to-gray-50">
-              <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">
+            <div class="border-2 border-gray-100 p-8 bg-white" style="border-radius: 4px;">
+              <h2 class="text-3xl font-bold text-gray-900 mb-8">
                 Mesaj Gönderin
               </h2>
 
               <form @submit.prevent="submitForm" class="space-y-6">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
-                    <label for="firstName" class="block text-sm font-semibold text-gray-700 mb-3">
+                    <label for="firstName" class="block text-sm font-semibold text-gray-700 mb-2">
                       Ad *
                     </label>
                     <input
@@ -119,7 +121,7 @@
                     />
                   </div>
                   <div>
-                    <label for="lastName" class="block text-sm font-semibold text-gray-700 mb-3">
+                    <label for="lastName" class="block text-sm font-semibold text-gray-700 mb-2">
                       Soyad *
                     </label>
                     <input
@@ -134,7 +136,7 @@
                 </div>
 
                 <div>
-                  <label for="email" class="block text-sm font-semibold text-gray-700 mb-3">
+                  <label for="email" class="block text-sm font-semibold text-gray-700 mb-2">
                     E-posta *
                   </label>
                   <input
@@ -148,7 +150,7 @@
                 </div>
 
                 <div>
-                  <label for="phone" class="block text-sm font-semibold text-gray-700 mb-3">
+                  <label for="phone" class="block text-sm font-semibold text-gray-700 mb-2">
                     Telefon
                   </label>
                   <input
@@ -161,7 +163,7 @@
                 </div>
 
                 <div>
-                  <label for="subject" class="block text-sm font-semibold text-gray-700 mb-3">
+                  <label for="subject" class="block text-sm font-semibold text-gray-700 mb-2">
                     Konu *
                   </label>
                   <select
@@ -181,7 +183,7 @@
                 </div>
 
                 <div>
-                  <label for="message" class="block text-sm font-semibold text-gray-700 mb-3">
+                  <label for="message" class="block text-sm font-semibold text-gray-700 mb-2">
                     Mesaj *
                   </label>
                   <textarea
@@ -200,7 +202,8 @@
                     v-model="form.privacy"
                     type="checkbox"
                     required
-                    class="mt-1 mr-3 w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500"
+                    class="mt-1 mr-3 w-4 h-4 border-2 border-gray-200 focus:border-gray-900"
+                    style="border-radius: 4px;"
                   />
                   <label for="privacy" class="text-sm text-gray-600">
                     Kişisel verilerimin işlenmesini kabul ediyorum. *
@@ -214,9 +217,6 @@
                 >
                   <svg v-if="isSubmitting" class="w-5 h-5 mr-2 animate-spin" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
-                  </svg>
-                  <svg v-else class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/>
                   </svg>
                   <span v-if="isSubmitting">Gönderiliyor...</span>
                   <span v-else>Mesaj Gönder</span>
@@ -238,14 +238,14 @@
           <p class="text-xl text-gray-600">Ofisimizi ziyaret etmek için konumumuzu görüntüleyin</p>
         </div>
 
-        <div class="bg-white rounded-2xl p-8 shadow-lg">
-          <div class="aspect-w-16 aspect-h-9 bg-gray-200 rounded-xl flex items-center justify-center">
+        <div class="border-2 border-gray-100 p-8 bg-white" style="border-radius: 4px;">
+          <div class="aspect-w-16 aspect-h-9 bg-gray-50 flex items-center justify-center" style="border-radius: 4px;">
             <div class="text-center">
-              <svg class="w-16 h-16 text-gray-400 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg class="w-16 h-16 text-gray-900 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
               </svg>
-              <p class="text-gray-600 font-medium">Harita Yükleniyor...</p>
+              <p class="text-gray-900 font-medium">Harita Yükleniyor...</p>
               <p class="text-sm text-gray-500 mt-2">{{ appConfig.contact.address }}</p>
             </div>
           </div>
@@ -257,41 +257,38 @@
     <section class="section-padding bg-gradient-hero text-white">
       <div class="container text-center">
         <div class="max-w-3xl mx-auto">
-          <h2 class="text-4xl lg:text-5xl font-bold mb-6 text-shadow">
+          <h2 class="text-4xl lg:text-5xl font-bold mb-6">
             Size Nasıl Yardımcı Olabiliriz?
           </h2>
-          <p class="text-xl text-blue-100 mb-8 leading-relaxed">
+          <p class="text-xl text-gray-200 mb-8 leading-relaxed">
             Uzman ekibimiz sorularınızı yanıtlamak ve size en iyi hizmeti sunmak için hazır.
             Bize ulaşın, sizinle iletişime geçelim.
           </p>
-          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <div class="flex flex-col sm:flex-row gap-6 justify-center">
             <a
               :href="`mailto:${appConfig.contact.email}`"
-              class="btn bg-white text-blue-600 hover:bg-blue-50"
+              class="btn btn-secondary"
             >
-              <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-              </svg>
               E-posta Gönder
             </a>
             <a
               :href="`tel:${appConfig.contact.phone}`"
-              class="btn btn-outline text-white border-white hover:bg-white hover:text-blue-600"
+              class="btn btn-outline text-white border-white hover:bg-white hover:text-gray-900"
             >
-              <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
-              </svg>
               Hemen Ara
             </a>
           </div>
         </div>
       </div>
+      <div class="absolute inset-0 bg-pattern opacity-10"></div>
     </section>
   </div>
 </template>
 
 <script setup>
-import { appConfig } from '~/config/app.config'
+import { useFedHubConfig } from '~/composables/useFedHubConfig'
+
+const { appConfig } = useFedHubConfig()
 
 // Form state
 const form = reactive({

@@ -180,7 +180,9 @@
 </template>
 
 <script setup>
-import { appConfig } from '~/config/app.config'
+import { useFedHubConfig } from '~/composables/useFedHubConfig'
+
+const { appConfig } = useFedHubConfig()
 
 // Reactive data
 const selectedCategory = ref('Tümü')
